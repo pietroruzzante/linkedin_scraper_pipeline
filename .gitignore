@@ -1,0 +1,14 @@
+.venv
+.env
+config.json
+__pycache__/
+*.__pycache__
+package/
+lambda.zip
+*.pdf
+*.doc
+*.docx
+.DS_Store
+AWSCLIV2.pkg
+*.zip
+templates/

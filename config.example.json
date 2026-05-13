@@ -1,0 +1,38 @@
+{
+    "searches": [
+        {
+            "name": "Your Name",
+            "role": "AI Engineer",
+            "location": "Spain",
+            "language": ["english", "spanish"],
+            "time_range_night": "r43200",
+            "time_range_day": "r7200",
+            "exclude_keywords": ["Company To Exclude"],
+            "priority_keywords": ["LLM", "ML", "TensorFlow", "LangChain", "junior", "remote", "LangGraph"],
+            "candidate_profile": "- Experience: X years professional, Y years with AI, Z years Python\n- Education: Degree in X, University of Y\n- Current: current role or project\n- Tech stack: list your main technologies\n- Preferences: remote or hybrid, open to all Spanish cities"
+        }
+    ],
+    "telegram": {
+        "greeting": "Hey [Name]!"
+    },
+    "cv": {
+        "competencies": [
+            "Machine Learning", "Deep Learning", "Generative AI",
+            "Natural Language Processing", "Prompt Engineering", "RAG",
+            "LLM", "AI Agents", "MLOps", "Model Deployment",
+            "API Development", "Data Pipelines"
+        ],
+        "libraries": [
+            "LangChain", "LangGraph", "OpenAI API", "Hugging Face", "Transformers",
+            "TensorFlow", "PyTorch", "Scikit-learn",
+            "FastAPI", "Pandas", "NumPy"
+        ],
+        "languages": [
+            "Python", "SQL", "Bash"
+        ],
+        "tools": [
+            "AWS", "Docker", "Git", "GitHub Actions",
+            "MLflow", "Jupyter"
+        ]
+    }
+}
