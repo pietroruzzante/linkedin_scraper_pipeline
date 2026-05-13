@@ -8,8 +8,6 @@
 
 Sending the same CV to 20 job postings a day yields a ~1% response rate. Manually tailoring each application takes 45+ minutes. This pipeline automates the middle ground: it finds the right offers, scores them against your profile, and generates a personalized CV for each one — while you sleep.
 
-**Results after 2 weeks in production:** 350+ offers scraped · ~230 pre-filtered · ~40 high-score CVs generated · 6 interviews scheduled.
-
 ---
 
 ## How It Works
