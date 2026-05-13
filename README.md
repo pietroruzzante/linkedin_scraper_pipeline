@@ -14,13 +14,13 @@ Sending the same CV to 20 job postings a day yields a ~1% response rate. Manuall
 
 ```mermaid
 flowchart LR
-    EB[EventBridge\nevery 2h] --> S[LinkedIn\nscraper]
+    EB[EventBridge] --> S[Scraper]
     S --> P[Pre-filter]
-    P --> L[LLM scoring\nGPT-4o-mini]
-    L -->|score ≥ 8| K[ATS keyword\nextraction]
-    K --> C[CV customization\nGPT-4o]
-    C --> T1[Telegram\noffer + PDF]
-    L -->|score < 8| T2[Telegram\nsummary]
+    P --> L[LLM scoring]
+    L -->|score ge 8| K[ATS keywords]
+    K --> C[CV generation]
+    C --> T1[Telegram + PDF]
+    L -->|score lt 8| T2[Telegram summary]
 ```
 
 ### Step by step
