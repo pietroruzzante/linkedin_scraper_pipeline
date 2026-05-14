@@ -12,3 +12,4 @@ lambda.zip
 AWSCLIV2.pkg
 *.zip
 templates/
+.vscode/settings.json

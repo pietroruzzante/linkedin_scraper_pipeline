@@ -18,7 +18,7 @@ run:
 		echo "Python virtual environment not found!"; \
 		exit 1; \
 	fi
-	python main.py
+	PYTHONPATH=$(PWD) python scripts/main.py
 
 # Target to install dependencies
 install:

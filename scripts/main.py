@@ -1,13 +1,13 @@
 # set -a && source .env && set +a
 
 import os
-from linkedin_requests import request_offers
-from parser import parse_offers
-from utils import pre_filter, split_offers, detect_language
-from llm_analysis import call_model, extract_keywords
-from telegram_message import send_message, send_document, send_simple_message
-from cv_parser import parse_cv
-from customize_cv import customize_cv
+from scripts.linkedin_requests import request_offers
+from scripts.parser import parse_offers
+from scripts.utils import pre_filter, split_offers, detect_language
+from scripts.llm_analysis import call_model, extract_keywords
+from scripts.telegram_message import send_message, send_document, send_simple_message
+from scripts.cv_parser import parse_cv
+from scripts.customize_cv import customize_cv
 
 import json
 

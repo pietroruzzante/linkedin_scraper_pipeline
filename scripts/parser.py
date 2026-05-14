@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import json
-from linkedin_requests import request_description
+from scripts.linkedin_requests import request_description
 
 def parse_offers(html_string: str) -> json:
 

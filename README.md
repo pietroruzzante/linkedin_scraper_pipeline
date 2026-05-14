@@ -105,6 +105,16 @@ Your DOCX templates need these placeholders (double curly braces, exact casing):
 
 ### 5. Run locally
 
+You can use the following command to run the project locally:
+
+```bash
+make run
+```
+
+This will load the environment variables from the `.env` file, activate the Python virtual environment, and execute `main.py`. Ensure that the `.env` file and the `.venv` directory are properly set up beforehand.
+
+Alternatively, you can manually run the script with:
+
 ```bash
 set -a && source .env && set +a
 python main.py

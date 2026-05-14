@@ -1,10 +1,13 @@
 import json
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
-from prompts import prompt_template_call_model, prompt_template_extract_keywords, cv_placeholder_prompt_template
+from scripts.prompts import prompt_template_call_model, prompt_template_extract_keywords, cv_placeholder_prompt_template
 
 os.environ["OPENAI_API_KEY"]
 
