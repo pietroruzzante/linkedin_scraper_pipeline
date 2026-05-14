@@ -12,7 +12,7 @@ Sending the same CV to 20 job postings a day yields a ~1% response rate. Manuall
 
 ## How It Works
 
-![pipeline](pipeline.PNG)
+![pipeline](pipeline.png)
 
 ### Step by step
 
