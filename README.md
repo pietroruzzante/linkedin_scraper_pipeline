@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ### 2. Environment variables
 
-Create a `.env` file:
+Create a `.env` file in the root directory with the following content:
 
 ```env
 OPENAI_API_KEY=sk-...
@@ -79,29 +79,28 @@ OUTPUT_PATH=./outputs/
 > To find your Telegram chat ID, send a message to your bot and open:
 > `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates`
 
-### 3. Configure `config.json`
+### 3. Create required folders
 
-Copy the example and fill in your details:
+Ensure the following folders exist in the project directory:
+
+- `templates/`: This folder will contain your DOCX CV templates. Create it if it doesn't exist.
+- `outputs/`: This folder will store the generated PDFs. Create it if it doesn't exist.
+
+You can create these folders with the following commands:
 
 ```bash
-cp config.example.json config.json
+mkdir templates outputs
 ```
 
-All user-facing settings live in `config.json` — no code changes needed to adapt this to your profile. See [Config Reference](#config-reference) below.
+### 4. Configure `config.json`
 
-### 4. Prepare CV templates
+Copy the example configuration file and fill in your details:
 
-Your DOCX templates need these placeholders (double curly braces, exact casing):
+```bash
+cp config/config.example.json config/config.json
+```
 
-| Placeholder | Filled with |
-|---|---|
-| `{{ROLE}}` | Job title chosen from a fixed list (`AI ENGINEER`, `ML ENGINEER`, etc.) |
-| `{{CORE_COMPETENCIES}}` | 4–5 competencies matching the JD |
-| `{{LIBRARIES}}` | 4–5 libraries/frameworks matching the JD |
-| `{{LANGUAGES}}` | Programming languages relevant to the JD (Python always included) |
-| `{{TOOLS}}` | Up to 4 tools matching the JD |
-
-`{{ROLE}}` is auto-formatted: **bold · 14pt · blue (#1B73C8)**.
+All user-facing settings live in `config.json` — no code changes are needed to adapt this to your profile. See [Config Reference](#config-reference) below.
 
 ### 5. Run locally
 
