@@ -118,24 +118,6 @@ Alternatively, you can manually run the script with:
 set -a && source .env && set +a
 python main.py
 ```
-
-### 6. Deploy to AWS Lambda
-
-The entry point is `handler(event, context)` in `main.py`.
-
-```bash
-# Build the deployment package (Linux x86_64 wheels for Lambda)
-make deploy
-```
-
-Set all `.env` variables as Lambda environment variables. Set the EventBridge trigger to:
-
-```
-cron(0 9,11,13,15,17,19,21 * * ? *)
-```
-
-> ⚠️ Set Lambda timeout to at least 5 minutes and memory to 256 MB+.
-
 ---
 
 ## Config Reference
